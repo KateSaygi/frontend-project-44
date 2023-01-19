@@ -1,3 +1,4 @@
 #!/usr/bin/env node
- 
- import { userName } from "../src/cli.js";
+/* eslint-disable import/named */
+/* eslint-disable no-unused-vars */
+import { userName } from '../src/cli.js';
