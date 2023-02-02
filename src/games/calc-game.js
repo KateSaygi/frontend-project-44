@@ -7,7 +7,7 @@ const oneSessionResult = () => {
   const operator = ['+', '-', '*'];
   const getRandomOperator = Math.floor(Math.random() * operator.length);
   const question = `${getRandomNum} ${operator[getRandomOperator]} ${getRandomNum2}`;
-  let result = 0;
+  let result;
   const calc = () => {
     switch (operator[getRandomOperator]) {
       case '+':
