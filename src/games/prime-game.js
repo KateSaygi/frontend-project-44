@@ -11,7 +11,9 @@ const oneSessionResult = () => {
   for (let i = 2; i <= (getRandomNum / 2); i += 1) {
     if (getRandomNum % i === 0) {
       calcResult = 'no';
-    } else calcResult = 'yes';
+    } else if (getRandomNum % i !== 0) {
+      calcResult = 'yes';
+    }
   }
 
   return [question, calcResult];
