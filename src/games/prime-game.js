@@ -2,7 +2,7 @@ import mainLogic from '../ index.js';
 
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const oneSessionResult = () => {
-  const getRandomNum = Math.floor(Math.random() * 20);
+  const getRandomNum = Math.floor(Math.random() * 10);
   const question = getRandomNum;
   let calcResult = '';
   if (getRandomNum === 1 || getRandomNum <= 0) {
