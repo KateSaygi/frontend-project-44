@@ -1,4 +1,4 @@
-import  runMainLogic from '../ index.js';
+import runMainLogic from '../ index.js';
 
 const gameRule = 'What is the result of the expression?';
 const makeRound = () => {
@@ -26,6 +26,6 @@ const makeRound = () => {
   return [question, correctAnswer.toString()];
 };
 const playCalc = () => {
-   runMainLogic(gameRule, makeRound);
+  runMainLogic(gameRule, makeRound);
 };
 export default playCalc;
