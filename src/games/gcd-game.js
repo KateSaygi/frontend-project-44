@@ -1,7 +1,7 @@
-import mainLogic from '../ index.js';
+import runMainLogic from '../ index.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
-const oneSessionResult = () => {
+const makeRound = () => {
   const getRandomNum = Math.floor(Math.random() * 10);
   const getRandomNum2 = Math.floor(Math.random() * 10);
 
@@ -19,6 +19,6 @@ const oneSessionResult = () => {
   return [question, correctAnswer];
 };
 const playGcd = () => {
-  mainLogic(gameRule, oneSessionResult);
+  runMainLogic(gameRule, makeRound);
 };
 export default playGcd;

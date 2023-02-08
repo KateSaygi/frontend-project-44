@@ -1,7 +1,7 @@
-import mainLogic from '../ index.js';
+import runMainLogic from '../ index.js';
 
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const oneSessionResult = () => {
+const makeRound = () => {
   const getRandomNum = Math.floor(Math.random() * 10);
   const question = getRandomNum;
   const primeOrNot = () => {
@@ -14,11 +14,11 @@ const oneSessionResult = () => {
       }
     } return 'yes';
   };
-  const calcResult = primeOrNot();
-  return [question, calcResult];
+  const correctAnswer = primeOrNot();
+  return [question, correctAnswer];
 };
 
 const playPrime = () => {
-  mainLogic(gameRule, oneSessionResult);
+  runMainLogic(gameRule, makeRound);
 };
 export default playPrime;

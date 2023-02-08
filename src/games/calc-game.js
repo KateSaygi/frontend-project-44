@@ -1,7 +1,7 @@
-import mainLogic from '../ index.js';
+import  runMainLogic from '../ index.js';
 
 const gameRule = 'What is the result of the expression?';
-const oneSessionResult = () => {
+const makeRound = () => {
   const getRandomNum = Math.floor(Math.random() * 5);
   const getRandomNum2 = Math.floor(Math.random() * 3);
   const operator = ['+', '-', '*'];
@@ -22,10 +22,10 @@ const oneSessionResult = () => {
       default:
     } return result;
   };
-  const calcResult = calc(getRandomNum, getRandomOperator, getRandomNum2);
-  return [question, calcResult.toString()];
+  const correctAnswer = calc(getRandomNum, getRandomOperator, getRandomNum2);
+  return [question, correctAnswer.toString()];
 };
 const playCalc = () => {
-  mainLogic(gameRule, oneSessionResult);
+   runMainLogic(gameRule, makeRound);
 };
 export default playCalc;

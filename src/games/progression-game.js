@@ -1,4 +1,4 @@
-import mainLogic from '../ index.js';
+import runMainLogic from '../ index.js';
 
 const getRandomNumber = (min, max = 20) => Math.floor(min + Math.random() * (max + 1 - min));
 const getProgressionArr = (begin, step, length) => {
@@ -11,7 +11,7 @@ const getProgressionArr = (begin, step, length) => {
 };
 const gameRule = 'What number is missing in the progression?';
 
-const oneSessionResult = () => {
+const makeRound = () => {
   const randomBegin = getRandomNumber(2);
   const randomStep = getRandomNumber(2, 5);
   const randomLength = getRandomNumber(5, 10);
@@ -19,14 +19,14 @@ const oneSessionResult = () => {
   const prograssionArr = getProgressionArr(randomBegin, randomStep, randomLength);
 
   const getRandomIndex = prograssionArr[randomIndex];
-  const calcResult = String(getRandomIndex);
+  const correctAnswer = String(getRandomIndex);
   prograssionArr[randomIndex] = '..';
   const question = prograssionArr.join(' ');
 
-  return [question, calcResult];
+  return [question, correctAnswer];
 };
 
 const playProg = () => {
-  mainLogic(gameRule, oneSessionResult);
+  runMainLogic(gameRule, makeRound);
 };
 export default playProg;

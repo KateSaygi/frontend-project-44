@@ -3,15 +3,7 @@
 
 <a href="https://codeclimate.com/github/KateSaygi/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/d39e6a53dd27dac20e91/maintainability" /></a>
 
-## example
-[![asciicast](https://asciinema.org/a/FNZ5xNZ0grsnesu5DhhyR2qKf.svg)](https://asciinema.org/a/FNZ5xNZ0grsnesu5DhhyR2qKf)
+## brain-calc
+[![asciicast](https://asciinema.org/a/OwuGrHsrLWCSMpAJBAZ5GYF1G.svg)](https://asciinema.org/a/OwuGrHsrLWCSMpAJBAZ5GYF1G)
 
-https://asciinema.org/a/oWDBthJ4Xn6td656yI5eASuhY
-
-https://asciinema.org/a/oIdpURdgMxFRuFdnjFIQ9f8U9
-
-https://asciinema.org/a/3IU4lccJHxv0DBx5d1nxAga7D
-
-https://asciinema.org/a/Keyx1b52508GwKijhk4fhFH3C
-
- https://asciinema.org/a/PbIJPBJnvHrRHGIYp2Eu52LkC
+## brain-even
