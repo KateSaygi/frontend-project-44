@@ -3,7 +3,8 @@
 
 <a href="https://codeclimate.com/github/KateSaygi/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/d39e6a53dd27dac20e91/maintainability" /></a>
 
-[![asciicast](https://asciinema.org/a/oWDBthJ4Xn6td656yI5eASuhY)] 
+## example
+[![asciicast](https://asciinema.org/a/FNZ5xNZ0grsnesu5DhhyR2qKf.svg)](https://asciinema.org/a/FNZ5xNZ0grsnesu5DhhyR2qKf)
 
 https://asciinema.org/a/oWDBthJ4Xn6td656yI5eASuhY
 
